@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putti Family Heritage</title>
+    <meta name="description" content="History and heritage of the Italian family Putti, from Veneto to Brazil.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo" style="display: flex; align-items: center;">Putti Family <img src="assets/header_flag.jpg"
+                alt="Flag" style="width: 250px; height: 160px; margin-left: 20px;"> <img
+                src="assets/veneto_flag_header.jpg" alt="Veneto Flag"
+                style="width: 250px; height: 160px; margin-left: 20px;"></div>
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="nav-home">Home</a></li>
+            <li><a href="#story" data-i18n="nav-story">Our Story</a></li>
+            <li><a href="#gallery" data-i18n="nav-gallery">Gallery</a></li>
+            <li><a href="#contact" class="btn-contact" data-i18n="nav-contact">Keep in Touch</a></li>
+            <li class="lang-selector">
+                <span data-lang="en">EN</span> /
+                <span data-lang="it">IT</span> /
+                <span data-lang="pt" class="active">PT</span>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <i data-lucide="menu"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="eyebrow" data-i18n="hero-eyebrow">Established in Veneto, Italy</span>
+            <h1 data-i18n="hero-title">The Putti Legacy</h1>
+            <p data-i18n="hero-desc">Tracing our roots from the Roman ages to the vibrant landscapes of Southern Brazil,
+                still kept alive by descendants in the city of Veranópolis, Rio Grande do Sul.
+            </p>
+            <a href="#story" class="btn-primary" data-i18n="hero-btn">Discover Our Journey</a>
+            <div style="margin-top: 1rem;">
+                <a href="https://maps.app.goo.gl/x8HrisK3Q88X29TK7" target="_blank" class="btn-map">
+                    <i data-lucide="map-pin" style="display:inline; vertical-align:middle; width: 16px;"></i>
+                    <span data-i18n="visit-square" style="vertical-align:middle;">Visit Praça Luigi Putti on Google
+                        Maps</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image-side"
+            style="width: 50%; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+            <div class="i18n-container announcement-section" style="text-align: center; max-width: 300px;">
+                <a href="assets/inauguracao_igreja.jpg" target="_blank" onmouseover="this.style.transform='scale(1.05)'"
+                    onmouseout="this.style.transform='scale(1)'"
+                    style="display: inline-block; width: 80px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: transform 0.3s ease; margin-bottom: 0.5rem;">
+                    <img src="assets/inauguracao_igreja.jpg" alt="Inauguração Igreja"
+                        style="width: 100%; height: auto; display: block;">
+                </a>
+                <p data-i18n="church-announcement"
+                    style="font-weight: 500; color: var(--accent-color); font-size: 0.95rem; line-height: 1.2;"></p>
+            </div>
+
+            <div class="hero-image-container" style="width: 100%; max-height: 350px;">
+                <!-- Using the edited plaque image as a hero visual -->
+                <img src="assets/masera_di_padova.png" alt="Maserà di Padova, Italia" class="hero-img">
+                <div class="hero-caption">Maserà di Padova, Italia</div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="story" class="section story-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="story-header">Our Origins</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="story-grid">
+                <div class="story-text">
+                    <h3 data-i18n="story-subtitle">From Italy to Brazil</h3>
+                    <p data-i18n="story-text-1">
+                        The history of the <strong>Putti</strong> family traces back to the <strong>XI-XII
+                            century</strong>.
+                        The name is derived from Latin variations referring to "boy" or "teenager," symbolizing a
+                        youthful spirit that has endured through generations.
+                    </p>
+                    <p data-i18n="story-text-2">
+                        Originating from the <strong>Veneto region</strong> in Italy, our journey to the New World began
+                        in the late 19th century.
+                        <strong>Luigi Putti</strong>, a courageous patriarch, departed his homeland to seek new
+                        opportunities in the lush lands of Brazil.
+                    </p>
+                    <div class="milestone">
+                        <span class="year">1889</span>
+                        <p data-i18n="milestone-text">Luigi Putti arrives in Brazil on <strong>April 4, 1889</strong>,
+                            at the age of 22, destined
+                            for Alfredo Chaves (now Veranópolis), Rio Grande do Sul.</p>
+                    </div>
+
+                    <!-- New Historical Section -->
+                    <div class="ancient-roots" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd;">
+                        <h3 data-i18n="ancient-roots-title">Ancient Roots & Research</h3>
+                        <p data-i18n="ancient-roots-p1">The Putti name (historically also "de Putti") has deep roots in
+                            Northern Italy, flourishing in regions like <strong>Emilia (Ferrara)</strong>,
+                            <strong>Veneto</strong>, and Liguria. Historical records identify early noble figures such
+                            as <strong>Dalila de Putti</strong> (born in Ferrara, 1484).
+                        </p>
+                        <p data-i18n="ancient-roots-p2">For those interested in tracing specific ancestors, public
+                            registers are invaluable. Official birth, marriage, and death records can be explored
+                            through:</p>
+                        <ul style="list-style-type: disc; margin-left: 1.5rem; margin-top: 1rem;">
+                            <li data-i18n="ancient-roots-list-1" style="margin-bottom: 0.5rem;"><strong>Portale
+                                    Antenati</strong>: The Italian National Archives' digital portal for civil records.
+                            </li>
+                            <li data-i18n="ancient-roots-list-2"><strong>Comune di Adria</strong>: Local archives in
+                                Adria may hold specific records for Luigi Putti's direct lineage.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="story-image">
+                    <figure>
+                        <img src="assets/arrival_certificate.jpg" alt="Luigi Putti Arrival Certificate"
+                            class="framed-image">
+                        <figcaption data-i18n="fig-arrival">Official Arrival Certificate, 1889</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="gallery-header">Historical Gallery</h2>
+                <p data-i18n="gallery-desc">Preserving the documents and memories of our ancestors.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="assets/adria_document.jpg" alt="Birth/Residency Certificate from Adria">
+                    <div class="gallery-caption">
+                        <h4 data-i18n="gallery-caption-1-title">Comune di Adria</h4>
+                        <p data-i18n="gallery-caption-1-desc">Official records from our Italian hometown.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/arrival_certificate.jpg" alt="Arrival Document">
+                    <div class="gallery-caption">
+                        <h4 data-i18n="gallery-caption-2-title">New Beginnings</h4>
+                        <p data-i18n="gallery-caption-2-desc">Document marking the arrival in Brazil.</p>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="assets/migration.png" alt="Italian immigrants disembarking in Santos, Brazil (1907)">
+                    <div class="gallery-caption">
+                        <h4 data-i18n="gallery-caption-3-title">The Crossing</h4>
+                        <p data-i18n="gallery-caption-3-desc">Italian immigrants arriving at the Port of Santos, Brazil
+                            (1907). A journey of hope.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/lazzarini_record.jpg" alt="Lazzarini Family Record">
+                    <div class="gallery-caption">
+                        <h4 data-i18n="gallery-caption-4-title">Passenger List</h4>
+                        <p data-i18n="gallery-caption-4-desc">Record of the Lazzarini family migration.</p>
+                        <a href="assets/lazzarini_record.pdf" download class="btn-download" data-i18n="download-record"
+                            style="display: inline-block; margin-top: 0.5rem; font-size: 0.9rem; text-decoration: underline; color: var(--accent-color);">Download
+                            Record (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Putti Family</h3>
+                <p data-i18n="footer-desc">Connecting generations across continents.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer-contact-title">Contact</h4>
+                <p data-i18n="footer-contact-desc">Have photos or stories to share? Get in touch.</p>
+                <form action="https://formsubmit.co/ajax/daniel@putti.eu" method="POST" class="contact-form"
+                    id="contactForm">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="Nova mensagem do site Putti Family!">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form-name">Nome</label>
+                        <input type="text" id="name" name="name" required placeholder="...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form-email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form-message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" data-i18n="form-send">Enviar Mensagem</button>
+                    <div id="formResponse" class="form-response"></div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer-copy">2026 Putti Family. Dedicated to our ancestors.</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
