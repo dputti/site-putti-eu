@@ -40,10 +40,12 @@ const translations = {
         "church-announcement": "",
         "cisei-text": "Search the archive of the international center for Italian immigration studies.",
         "cisei-genova": "Search for Italians who departed through Genoa, Italy.",
+        "putti-research": "Historical-linguistic research of the Putti surname",
         "form-name": "Name",
         "form-email": "Email",
         "form-message": "Message",
         "form-send": "Send Message",
+        "form-file": "Attach historical photo or record",
         "form-success": "Message sent successfully!",
         "form-error": "Something went wrong. Try again."
     },
@@ -88,10 +90,12 @@ const translations = {
         "church-announcement": "",
         "cisei-text": "Cerca nell'archivio del Centro Internazionale Studi Emigrazione Italiana.",
         "cisei-genova": "Cerca gli italiani partiti da Genova, Italia.",
+        "putti-research": "Ricerca storico-linguistica del cognome Putti",
         "form-name": "Nome",
         "form-email": "Email",
         "form-message": "Messaggio",
         "form-send": "Invia Messaggio",
+        "form-file": "Allega foto storica o documento",
         "form-success": "Messaggio inviato con successo!",
         "form-error": "Qualcosa è andato storto. Riprova."
     },
@@ -136,10 +140,12 @@ const translations = {
         "church-announcement": "Inauguração da nova igreja Nossa Senhora do Carmo. Clique para ver os detalhes.",
         "cisei-text": "Pesquise pelo arquivo do centro internacional de estudos da imigração italiana.",
         "cisei-genova": "Pesquise os italianos que saíram por Genova, Italia",
+        "putti-research": "Pesquisa histórico-linguística do sobrenome Putti",
         "form-name": "Nome",
         "form-email": "E-mail",
         "form-message": "Mensagem",
         "form-send": "Enviar Mensagem",
+        "form-file": "Anexar foto histórica ou registro",
         "form-success": "Mensagem enviada com sucesso!",
         "form-error": "Algo deu errado. Tente novamente."
     }

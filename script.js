@@ -97,6 +97,21 @@ setLanguage(savedLang);
 // Form Submission Handling
 const contactForm = document.getElementById('contactForm');
 const formResponse = document.getElementById('formResponse');
+const fileInput = document.getElementById('attachment');
+const fileNameDisplay = document.getElementById('fileName');
+
+if (fileInput) {
+    fileInput.addEventListener('change', function (e) {
+        if (this.files && this.files.length > 0) {
+            fileNameDisplay.textContent = this.files[0].name;
+            fileNameDisplay.style.color = 'var(--accent-color)';
+        } else {
+            const currentLang = document.documentElement.lang || 'pt';
+            fileNameDisplay.textContent = translations[currentLang]['form-file'];
+            fileNameDisplay.style.color = '';
+        }
+    });
+}
 
 if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
@@ -110,18 +125,16 @@ if (contactForm) {
         submitBtn.disabled = true;
         submitBtn.textContent = '...';
 
-        // Prepare data for FormSubmit AJAX
+        // Use FormData directly to support file uploads
         const formData = new FormData(contactForm);
-        const data = {};
-        formData.forEach((value, key) => data[key] = value);
 
         fetch(contactForm.getAttribute('action'), {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                // When sending FormData, the browser automatically sets the correct Content-Type with boundary
                 'Accept': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: formData
         })
             .then(response => response.json())
             .then(result => {
@@ -129,6 +142,11 @@ if (contactForm) {
                     formResponse.textContent = translations[currentLang]['form-success'];
                     formResponse.className = 'form-response success active';
                     contactForm.reset();
+                    // Reset file name display
+                    if (fileNameDisplay) {
+                        fileNameDisplay.textContent = translations[currentLang]['form-file'];
+                        fileNameDisplay.style.color = '';
+                    }
                 } else {
                     throw new Error('FormSubmit error');
                 }

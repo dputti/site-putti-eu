@@ -147,6 +147,17 @@
                     <p data-i18n="cisei-genova"
                         style="font-size: 0.9rem; color: #777; margin-top: 0.5rem; text-align: center; font-style: italic;">
                         Pesquise os italianos que saíram por Genova, Italia</p>
+
+                    <div class="research-section" style="margin-top: 2rem; text-align: center;">
+                        <a href="assets/Historia Cognome Putti.pdf" target="_blank" class="preview-link"
+                            style="display: inline-block; transition: var(--transition);">
+                            <img src="assets/putti_research_preview.png" alt="Putti Surname Research Preview"
+                                class="framed-image" style="width: 200px; height: auto; margin: 0 auto;">
+                            <p data-i18n="putti-research"
+                                style="margin-top: 1rem; font-weight: 500; color: var(--primary-color); font-size: 0.95rem;">
+                                Pesquisa histórico-linguística do sobrenome Putti</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,8 +217,8 @@
             <div class="footer-col">
                 <h4 data-i18n="footer-contact-title">Contact</h4>
                 <p data-i18n="footer-contact-desc">Have photos or stories to share? Get in touch.</p>
-                <form action="https://formsubmit.co/ajax/daniel@putti.eu" method="POST" class="contact-form"
-                    id="contactForm">
+                <form action="https://formsubmit.co/ajax/daniel@putti.eu" method="POST" enctype="multipart/form-data"
+                    class="contact-form" id="contactForm">
                     <!-- FormSubmit Configuration -->
                     <input type="hidden" name="_subject" value="Nova mensagem do site Putti Family!">
                     <input type="hidden" name="_template" value="table">
@@ -223,6 +234,13 @@
                     <div class="form-group">
                         <label for="message" data-i18n="form-message">Mensagem</label>
                         <textarea id="message" name="message" rows="4" required placeholder="..."></textarea>
+                    </div>
+                    <div class="form-group form-group-file">
+                        <label for="attachment" class="file-label">
+                            <i data-lucide="paperclip"></i>
+                            <span id="fileName" data-i18n="form-file">Anexar foto histórica ou registro</span>
+                        </label>
+                        <input type="file" id="attachment" name="attachment" accept="image/*, .pdf">
                     </div>
                     <button type="submit" class="btn-submit" data-i18n="form-send">Enviar Mensagem</button>
                     <div id="formResponse" class="form-response"></div>
